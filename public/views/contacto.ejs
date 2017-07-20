@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+    <% include templates/head %> <!--incluye cachitos de código desde otro lugar mediante EJS para no tener que copiar y pegar código constantemente-->
+    <title><%= titulo %></title><!--pongo el igual por que muestro algo de HTML desde el index.js!, sino no es necesario poner = -->
+</head>
+<body>
+	
+	<div class="container-fluid contenedor">
+		<% include parcials/navbar %>
+		<section class="contenido">
+			<h2><%= subtitulo %><h2>
+        <form method="post" action="/contacto/send-message">
+        <div class="contenedor-form">
+          <div class="form-group grupo ">
+            <label for="name">Nombre</label>
+            <input name="name" type="text" class="form-control" id="name" placeholder="Nombre">
+          </div>
+          <div class="form-group grupo ">
+            <label for="lastname">Apellido</label>
+            <input name="lastname" type="text" class="form-control" id="lastname" placeholder="Apellido">
+          </div>
+
+          <div class="form-group grupo ">
+            <label for="email">Email</label>
+            <input name="email" type="email" class="form-control" id="email" placeholder="Mail">
+          </div>
+
+          <div class="form-group grupo ">
+            <label for="message">Mensaje</label>
+           <div> <textarea name="message" class="form-control" id="message" rows="10"></textarea></div>
+          </div>
+        </div>
+        <button class="btn btn-info">Enviar</button>
+        </form>
+        <div class="gracias">
+          <% if(typeof success !== 'undefined') { %>
+              <div class="alert alert-success" role="alert">
+                <%= success %>
+              </div>
+          <% } %>
+        </div>  
+		</section><!--termina CONTENIDO-->
+	</div><!--TERMINA CONTENEDOR-->
+</body>
+
+</html>

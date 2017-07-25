@@ -2,6 +2,8 @@ var express=require('express'); //require es funcion de JS que funciona en node 
 var app=express(); //variable que me devuelve lo que hay en express.
 var path=require('path'); //libreria que viene con Node. 
 var bodyParser=require('body-parser');
+
+
 //define funcionalidad extra entre que llega petición al servidor y que yo ejecuto funcion para petición (use)
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(bodyParser.json());//obj donde meto POST de form

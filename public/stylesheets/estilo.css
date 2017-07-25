@@ -36,6 +36,13 @@ nav .escondido{
 	display:none;
 }
 
+#div1{
+	margin-left:5%;
+
+}
+#div2{
+	margin-left: 10%;
+}
 .contenido{
 	width:80%;
 	color:#696767;
@@ -44,17 +51,81 @@ nav .escondido{
 h2{
 	font-size: 18px;
 }
+.portada{
+	width:100%;
+}
+.dibujos{
+	width:100%;
+	display:flex;
+	justify-content: space-between;
+	flex-direction: column;
+	flex-wrap: wrap;
+}
+.dibujos .dibujo-div{
+	width: 100%;
+	display:flex;
+	justify-content: space-around;
+	flex-direction: row;
+	padding-top:5%;
+}
+.dibujos .dibujo-div img{
+	width: 100%;
+	margin:2%;
+	padding: 5px;
+}
 
 .form-group{
 	width: 30%;
   display: flex;
   justify-content: space-between;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   margin-left:25%;
+   margin-bottom:2%;
 
 }
 .form-group label{
 	 margin-right:2%;
+
 }
 
+form button{
+	margin-left: 50%;
+}
+/* ---------------------- Media Queries ---------------------- */
+
+/*----------------------- Tablet Landscape ------------------- */
+@media all and (min-width: 768px) and (max-width: 1024px) {
+	.form-group{
+	width: 70%;
+  display: flex;
+  flex-direction: column;
+  margin-left:10%;
+   margin-bottom:2%;
+
+}
+
+}
+/*----------------------- Phone Portrait & Smaller ----------- */
+@media all and (max-width: 480px) {
+		.form-group{
+	width: 70%;
+  display: flex;
+  flex-direction: column;
+  margin-left:10%;
+   margin-bottom:2%;
+
+}
+	
+}
+/*---------------------Phone LandScape----------------*/
+@media all and (min-width: 481px) and (max-width: 769px) {
+		.form-group{
+	width: 70%;
+  display: flex;
+  flex-direction: column;
+  margin-left:10%;
+   margin-bottom:2%;
+
+}
+}

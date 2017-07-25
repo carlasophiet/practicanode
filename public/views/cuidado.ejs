@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+    <% include templates/head %> <!--incluye cachitos de código desde otro lugar mediante EJS para no tener que copiar y pegar código constantemente-->
+    <title><%= titulo %></title><!--pongo el igual por que muestro algo de HTML desde el index.js!, sino no es necesario poner = -->
+</head>
+<body>
+	<div class="container-fluid contenedor">
+
+		<% include parcials/navbar %>
+		<section class="contenido">
+			<h2><%= subtitulo %><h2>
+			<div class="dibujos">
+				<div><p>Historieta sin viñetas sobre el significado del Cuidado. Juego de palabra entre cuidar -de velar por alguien, de asistir- y cuidado de estar alerta.</p></div>
+				<div class="dibujo-div">
+					<a data-id= "public/views/imgs/cuidado/0.jpg" href="#" data-toggle="modal" data-target="#myModal" class="chiquita"><img src="public/views/imgs/cuidado/0.jpg" alt="fábrica color naranja sobre fondo rosa"></a>
+					<a data-id= "public/views/imgs/cuidado/1.jpg" href="#" data-toggle="modal" data-target="#myModal" class="chiquita"><img src="public/views/imgs/cuidado/1.jpg" alt=""></a>
+				</div>
+				<div class="dibujo-div">
+					<a data-id= "public/views/imgs/cuidado/2.jpg" href="#" data-toggle="modal" data-target="#myModal" class="chiquita"><img src="public/views/imgs/cuidado/2.jpg" alt=""></a>
+					<a data-id= "public/views/imgs/cuidado/3.jpg" href="#" data-toggle="modal" data-target="#myModal" class="chiquita"><img src="public/views/imgs/cuidado/3.jpg" alt=""></a>
+				</div>
+				<div class="dibujo-div">
+					<a data-id= "public/views/imgs/cuidado/4.jpg" href="#" data-toggle="modal" data-target="#myModal" class="chiquita"><img src="public/views/imgs/cuidado/4.jpg" alt=""></a>
+					<a data-id= "public/views/imgs/cuidado/5.jpg" href="#" data-toggle="modal" data-target="#myModal" class="chiquita"><img src="public/views/imgs/cuidado/5.jpg" alt=""></a>	
+				</div>
+				<div class="dibujo-div">
+					<a data-id= "public/views/imgs/cuidado/6.jpg" href="#" data-toggle="modal" data-target="#myModal" class="chiquita"><img src="public/views/imgs/cuidado/6.jpg" alt="" class="img-ind"></a>	
+				</div>
+				<div class="dibujo-div">
+					<a data-id= "public/views/imgs/cuidado/7.jpg" href="#" data-toggle="modal" data-target="#myModal" class="chiquita"><img src="public/views/imgs/cuidado/7.jpg" alt="" class="img-ind"></a>	
+				</div>
+				
+			</div>
+		</section><!--termina CONTENIDO-->
+	<% include parcials/modal %>
+	</div><!--TERMINA CONTENEDOR-->
+</body>
+</body>
+</html>

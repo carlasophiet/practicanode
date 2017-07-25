@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+    <% include templates/head %> <!--incluye cachitos de código desde otro lugar mediante EJS para no tener que copiar y pegar código constantemente-->
+    <title><%= titulo %></title><!--pongo el igual por que muestro algo de HTML desde el index.js!, sino no es necesario poner = -->
+</head>
+<body>
+	<div class="container-fluid contenedor">
+
+		<% include parcials/navbar %>
+		<section class="contenido">
+			<h2><%= subtitulo %><h2>
+			<div class="dibujos">
+				<div><p>'Lihuén: cosa 'e Mandinga' es un proyecto transmedia que cuenta con apoyo del INCAA y de la Fca. de Bellas Artes, UNLP. El puntapié inicial es una serie web de diez capitulos. Me desempeño como Directora de Arte y Fondista.</p></div>
+				<div class="dibujo-div">
+					<a data-id= "public/views/imgs/lihuen-fondos/1.jpg" href="#" data-toggle="modal" data-target="#myModal" class="chiquita"><img src="public/views/imgs/lihuen-fondos/1.jpg" alt="fábrica color naranja sobre fondo rosa"></a>
+					<a data-id= "public/views/imgs/lihuen-fondos/2.jpg" href="#" data-toggle="modal" data-target="#myModal" class="chiquita"><img src="public/views/imgs/lihuen-fondos/2.jpg" alt=""></a>
+				</div>
+				<div class="dibujo-div">
+					<a data-id= "public/views/imgs/lihuen-fondos/3.jpg" href="#" data-toggle="modal" data-target="#myModal" class="chiquita"><img src="public/views/imgs/lihuen-fondos/3.jpg" alt=""></a>
+					<a data-id= "public/views/imgs/lihuen-fondos/4.jpg" href="#" data-toggle="modal" data-target="#myModal" class="chiquita"><img src="public/views/imgs/lihuen-fondos/4.jpg" alt=""></a>
+				</div>
+				<div class="dibujo-div">
+					<a data-id= "public/views/imgs/lihuen-fondos/5.jpg" href="#" data-toggle="modal" data-target="#myModal" class="chiquita"><img src="public/views/imgs/lihuen-fondos/5.jpg" alt=""></a>
+					<a data-id= "public/views/imgs/lihuen-fondos/6.jpg" href="#" data-toggle="modal" data-target="#myModal" class="chiquita"><img src="public/views/imgs/lihuen-fondos/6.jpg" alt=""></a>	
+				</div>
+				<div class="dibujo-div">
+					<a data-id= "public/views/imgs/lihuen-fondos/7.jpg" href="#" data-toggle="modal" data-target="#myModal" class="chiquita"><img src="public/views/imgs/lihuen-fondos/7.jpg" alt="" class="img-ind"></a>	
+				</div>
+				
+			</div>
+		</section><!--termina CONTENIDO-->
+	<% include parcials/modal %>
+	</div><!--TERMINA CONTENEDOR-->
+</body>
+</body>
+</html>
